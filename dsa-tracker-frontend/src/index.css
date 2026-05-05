@@ -227,10 +227,6 @@ p, span {
   border-radius: 6px;
 }
 
-.auth-left {
-  background: var(--card-bg);
-}
-
 .sep {
   margin: 0 5px;
 }
@@ -266,4 +262,69 @@ p, span {
   background: #f59e0b;
   color: white;
   border: none;
+}
+
+.auth-container {
+  display: flex;
+  height: 100vh;
+}
+
+.auth-left {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--bg);
+}
+
+.auth-card {
+  width: 340px;
+  padding: 25px;
+
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+
+  border-radius: 6px;
+  border: 1px solid var(--border);
+
+  background: var(--card-bg);
+  color: var(--text);
+}
+
+.auth-button {
+  width: 100%;
+  padding: 10px;
+
+  border-radius: 6px;
+  border: none;
+
+  background: var(--easy);
+  color: white;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.auth-button:hover {
+  opacity: 0.9;
+}
+
+.auth-right {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #4CAF50, #2e7d32);
+  color: white;
 }
